@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="index.css">
+        <title>Визитка</title>
+    </head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="header__logo">Анкета - визитка</h1>
+            <div class="header__menu menu">
+                <img src="photo_2023-10-26_23-28-55.jpg" height="395" width="395">
+            </div>
+        </div>
+        
+        <div class="info" id="info">
+            <h2 class="info__title">О себе</h2>
+            <p class="info__fullname">
+            Меня зовут Фараджев Рауф Эльман оглы. Живу и обучаюсь в Москве. Являюсь студентом 1 курса.
+            Направление: IT. Факультет: Программная инженерия.
+            </p>
+
+            <a href="https://t.me/TheMysteriousGentleman" class="info__nickname">Мой Telegram</a>
+
+            <p></p>
+
+            <a href="https://github.com/BXBigX" class="info__nickname">Мой Github</a>
+
+            <p></p>
+
+            <a href="https://vk.com/GentelmanX" class="info__nickname">Мой ВК</a>
+
+            <p></p>
+        </div>
+
+
+        <button onclick="toggleLabInfo()">Показать/скрыть информацию о лабораторное работе</button>
+
+      <div id="labInfo" class="lab-info">
+          <p>Лабораторная работа №2:</p>
+          <img src="/Снимок экрана 2023-11-13 133118.png" class="photo" width="1205" height="685"/>
+      </div>
+
+      <script>
+          function toggleLabInfo() {
+              var labInfo = document.getElementById('labInfo');
+              if (labInfo.style.display === 'none') {
+                  labInfo.style.display = 'block';
+              } else {
+                  labInfo.style.display = 'none';
+              }
+          }
+      </script>
+
+
+        <div id="div1">
+            <p>Олег</p>
+        </div>
+
+    </div>
+    
+<script src="index.js"></script>
+</body>
+</html>
